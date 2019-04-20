@@ -15,8 +15,8 @@ user = {
 @app.route('/user/<username>')
 def index(username):
     for i in user.keys():
-        if username == i:
-            user_result = user
+        if username in user.keys():
+            user_result = user[i]
         else:
             user_result = "User not found"
     return render_template('Serious2.html', user_result = user_result)
