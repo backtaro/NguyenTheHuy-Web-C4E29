@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+{% for item in personal_info %}
+    <b>Name: </b>{{ item.Name }} <br>
+    <b>DOB: </b>{{ item.DOB }} <br>
+    <b>Age: </b>{{ item.Age }} <br>
+    <b>Eyes: </b>{{ item.Eyes }} <br>
+    <b>Blood: </b>{{ item.Blood }} <br>    
+    <b>Work: </b>{{ item.Work }} <br> 
+    <b>School: </b>{{ item.School }} <br> 
+    <b>Hobbies: </b>{{ item.Hobbies }} <br> 
+
+{% endfor %}
+
+</body>
+</html>
