@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <br>
+    <button onclick="window.location='/bike_list/new_bike';"> ADD NEW BIKE </button><br>
+    <br>
+    {% for bike_list in bike_list %}
+        <b>Vehicle ID# {{loop.index}} </b><br>
+        Model: {{ bike_list.model}} <br>
+        Daily fee (VND): {{ bike_list.daily_fee}} <br>
+        Year: {{ bike_list.year}} <br>   
+        Image: <br>
+        <img src={{bike_list.link}}>
+        <br>
+        <br>
+    {% endfor %}
+
+</body>
+</html>
